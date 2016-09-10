@@ -6,6 +6,7 @@
   "scripts": {
     "build": "babel src --out-dir lib",
     "codecov": "codecov",
+    "coverage": "NODE_ENV=test babel-node $(npm bin)/isparta cover $(npm bin)/_mocha -- --recursive",
     "dev": "npm test -- --watch",
     "lint": "eslint app test",
     "prepublish": "npm run build",
@@ -37,6 +38,7 @@
     "chai": "^3.5.0",
     "codecov": "^1.0.1",
     "eslint": "^3.5.0",
+    "isparta": "^4.0.0",
     "jsdom": "^9.5.0",
     "mocha": "^3.0.2",
     "sinon": "^1.17.5",
