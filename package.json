@@ -1,6 +1,6 @@
 {
   "name": "google-tag-manager-react-router-integrator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple integrator for react router history and google tag manager",
   "main": "lib/index.js",
   "scripts": {
