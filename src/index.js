@@ -2,7 +2,8 @@ const googleTagManagerInit = GTM_CONTAINER_ID => {
     const iframe = document.createElement('iframe');
     iframe.id = 'GTM_iframe';
     iframe.src = `http://www.googletagmanager.com/ns.html?id=${GTM_CONTAINER_ID}`;
-    iframe.style = 'display:none;visibility:hidden';
+    iframe.style.display = 'none';
+    iframe.style.visibility = 'hidden';
     document.body.appendChild(iframe);
     (function a (w, d, s, l, i) {
         w[l] = w[l] || [];
